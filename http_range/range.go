@@ -8,6 +8,7 @@ package http_range
 import (
 	"errors"
 	"fmt"
+	"math"
 	"net/textproto"
 	"strconv"
 	"strings"
@@ -36,7 +37,7 @@ var (
 // ParseRange parses a Range header string as per RFC 7233.
 // ErrNoOverlap is returned if none of the ranges overlap.
 // ErrInvalid is returned if s is invalid range.
-func ParseRange(s string, size int64) ([]Range, error) { // nolint:gocognit
+func ParseRange(s string, size int64, defaultChunkSize int64) ([]Range, error) { // nolint:gocognit
 	if s == "" {
 		return nil, nil // header not present
 	}
@@ -89,7 +90,8 @@ func ParseRange(s string, size int64) ([]Range, error) { // nolint:gocognit
 			r.Start = i
 			if end == "" {
 				// If no end is specified, range extends to end of the file.
-				r.Length = size - r.Start
+				//r.Length = size - r.Start
+				r.Length = int64(math.Min(float64(defaultChunkSize), float64(size-r.Start)))
 			} else {
 				i, err := strconv.ParseInt(end, 10, 64)
 				if err != nil || r.Start > i {

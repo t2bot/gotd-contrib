@@ -100,7 +100,7 @@ func TestParseRange(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			got, err := ParseRange(tt.args.s, tt.args.size)
+			got, err := ParseRange(tt.args.s, tt.args.size, tt.args.size)
 			if (err != nil) != tt.wantErr {
 				t.Errorf("ParseRange() error = %v, wantErr %v", err, tt.wantErr)
 				return
