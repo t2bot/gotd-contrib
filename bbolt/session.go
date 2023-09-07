@@ -5,7 +5,7 @@ import (
 
 	"github.com/gotd/td/session"
 
-	"github.com/gotd/contrib/auth/kv"
+	"github.com/t2bot/gotd-contrib/auth/kv"
 )
 
 var _ session.Storage = SessionStorage{}

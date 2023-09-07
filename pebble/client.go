@@ -7,7 +7,7 @@ import (
 	"github.com/go-faster/errors"
 	"go.uber.org/multierr"
 
-	"github.com/gotd/contrib/auth/kv"
+	"github.com/t2bot/gotd-contrib/auth/kv"
 )
 
 type pebbleStorage struct {

@@ -11,7 +11,7 @@ import (
 
 	"github.com/gotd/td/telegram"
 
-	"github.com/gotd/contrib/pebble"
+	"github.com/t2bot/gotd-contrib/pebble"
 )
 
 func pebbleStorage(ctx context.Context) error {

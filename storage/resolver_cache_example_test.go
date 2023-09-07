@@ -15,8 +15,8 @@ import (
 
 	"github.com/gotd/td/telegram"
 
-	"github.com/gotd/contrib/pebble"
-	"github.com/gotd/contrib/storage"
+	"github.com/t2bot/gotd-contrib/pebble"
+	"github.com/t2bot/gotd-contrib/storage"
 )
 
 func resolverCache(ctx context.Context) error {

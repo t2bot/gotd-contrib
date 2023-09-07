@@ -12,7 +12,7 @@ import (
 
 	"github.com/gotd/td/tg"
 
-	"github.com/gotd/contrib/auth/localization"
+	"github.com/t2bot/gotd-contrib/auth/localization"
 )
 
 func TestTerminal(t *testing.T) {

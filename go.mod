@@ -1,4 +1,4 @@
-module github.com/gotd/contrib
+module github.com/t2bot/gotd-contrib
 
 go 1.20
 

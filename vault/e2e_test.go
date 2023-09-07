@@ -10,8 +10,8 @@ import (
 
 	"github.com/hashicorp/vault/api"
 
-	"github.com/gotd/contrib/internal/tests"
-	"github.com/gotd/contrib/vault"
+	"github.com/t2bot/gotd-contrib/internal/tests"
+	"github.com/t2bot/gotd-contrib/vault"
 )
 
 func TestE2E(t *testing.T) {

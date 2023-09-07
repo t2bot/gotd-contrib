@@ -3,8 +3,8 @@ package clock_test
 import (
 	"log"
 
-	"github.com/gotd/contrib/clock"
 	"github.com/gotd/td/telegram"
+	"github.com/t2bot/gotd-contrib/clock"
 )
 
 func ExampleNewNTP() {

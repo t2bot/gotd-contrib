@@ -12,7 +12,7 @@ import (
 
 	"github.com/gotd/td/telegram"
 
-	"github.com/gotd/contrib/s3"
+	"github.com/t2bot/gotd-contrib/s3"
 )
 
 func s3Storage(ctx context.Context) error {

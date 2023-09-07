@@ -16,7 +16,7 @@ import (
 	"github.com/gotd/td/telegram/message"
 	"github.com/gotd/td/tg"
 
-	"github.com/gotd/contrib/invoker"
+	"github.com/t2bot/gotd-contrib/invoker"
 )
 
 func metricsInvoker(ctx context.Context) (rerr error) {

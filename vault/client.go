@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/vault/api"
 	"go.uber.org/multierr"
 
-	"github.com/gotd/contrib/auth/kv"
+	"github.com/t2bot/gotd-contrib/auth/kv"
 )
 
 type vaultClient struct {

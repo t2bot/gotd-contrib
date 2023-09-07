@@ -7,8 +7,8 @@ import (
 
 	redisclient "github.com/go-redis/redis/v8"
 
-	"github.com/gotd/contrib/internal/tests"
-	"github.com/gotd/contrib/redis"
+	"github.com/t2bot/gotd-contrib/internal/tests"
+	"github.com/t2bot/gotd-contrib/redis"
 )
 
 func TestE2E(t *testing.T) {

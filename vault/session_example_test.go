@@ -11,7 +11,7 @@ import (
 
 	"github.com/gotd/td/telegram"
 
-	"github.com/gotd/contrib/vault"
+	"github.com/t2bot/gotd-contrib/vault"
 )
 
 func vaultStorage(ctx context.Context) error {

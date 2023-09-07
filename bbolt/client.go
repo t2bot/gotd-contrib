@@ -6,7 +6,7 @@ import (
 	"github.com/go-faster/errors"
 	"go.etcd.io/bbolt"
 
-	"github.com/gotd/contrib/auth/kv"
+	"github.com/t2bot/gotd-contrib/auth/kv"
 )
 
 type bboltStorage struct {
